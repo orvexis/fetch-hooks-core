@@ -1,7 +1,0 @@
-src
-tests
-.github
-*.log
-tsconfig.json
-vitest.config.ts
-.prettierrc
