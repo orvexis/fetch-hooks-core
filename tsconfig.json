@@ -8,12 +8,16 @@
 
     "declaration": true,
     "declarationMap": false,
+    "declarationDir": "dist",
     "outDir": "dist",
+    "rootDir": "src",
+    "emitDeclarationOnly": false,
     "strict": true,
     "skipLibCheck": true,
 
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "tests"]
+  "include": ["src"],
+  "exclude": ["tests", "node_modules"]
 }
