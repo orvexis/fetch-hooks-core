@@ -1,0 +1,32 @@
+{
+  "name": "fetch-hooks-core",
+  "version": "1.0.0",
+  "description": "Tiny universal React-style hooks for fetch() that work in Node, Bun, Deno, Cloudflare Workers, and modern runtimes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "fetch",
+    "hooks",
+    "node",
+    "bun",
+    "deno",
+    "cloudflare",
+    "edge",
+    "signals"
+  ],
+  "author": "devforgetech",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.9"
+  }
+}
