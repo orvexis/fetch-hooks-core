@@ -1,48 +1,44 @@
 # fetch-hooks-core
 
 <p align="center">
-  <img src="./logo.svg" width="60%">
+  <img src="./logo.svg" width="65%">
 </p>
 
-<p align="center">
-  <strong>Tiny, universal React-style hooks for fetch()</strong><br/>
-  Works in Node · Bun · Deno · Cloudflare Workers · Edge Runtimes
-</p>
+<h2 align="center">The Modern Fetch Utility Library for JavaScript — Tiny, Typed, Universal</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/fetch-hooks-core.svg" />
-  <img src="https://img.shields.io/bundlephobia/minzip/fetch-hooks-core" />
-  <img src="https://img.shields.io/npm/types/fetch-hooks-core" />
-  <img src="https://img.shields.io/github/license/devforgetech/fetch-hooks-core" />
+  Designed for developers building <strong>Node servers</strong>, <strong>Bun scripts</strong>, 
+  <strong>Deno apps</strong>, <strong>Cloudflare Workers</strong>, and <strong>Edge runtimes</strong>.
 </p>
 
 ---
 
-## 🚀 Why?
+# 🚀 Introduction
 
-Fetch is universal — but handling:
+`fetch-hooks-core` brings the ergonomics of React hooks to any JavaScript environment — no framework required.  
+If you use `fetch()` often, this library gives you **reactive data**, **retry logic**, **polling**, and **concurrency tools** that feel instantly familiar.
 
-- loading states
-- retries
-- aborting
-- concurrency
-- polling
+### SEO Keywords:
 
-…is boilerplate-heavy everywhere outside of React.
-
-**fetch-hooks-core** brings a familiar hook-like API to any JavaScript runtime:
-
-```ts
-const { data, loading, error, refresh } = await useFetch("/api");
-```
-
-No React.  
-No dependencies.  
-No runtime lock-in.
+fetch hooks, TypeScript fetch library, universal fetch utilities, Node fetch wrapper, Bun fetch, Deno fetch, fetch concurrency, fetch retry
 
 ---
 
-## 📦 Installation
+# ✨ Feature Matrix
+
+| Feature                        | fetch-hooks-core | Ky         | Axios     |
+| ------------------------------ | ---------------- | ---------- | --------- |
+| Universal runtime support      | ✅               | ❌         | ❌        |
+| Hook-style API                 | ✅               | ❌         | ❌        |
+| Zero dependencies              | ✅               | ❌         | ❌        |
+| Concurrency control            | ✅               | ❌         | ❌        |
+| Polling helper                 | ✅               | ❌         | ❌        |
+| Retry with exponential backoff | ✅               | ⚠️ limited | ⚠️ plugin |
+| TypeScript-first               | ✅               | ⚠️         | ⚠️        |
+
+---
+
+# 📦 Installation
 
 ```bash
 npm install fetch-hooks-core
@@ -50,97 +46,53 @@ npm install fetch-hooks-core
 
 ---
 
-## ✨ Features
-
-- React-style fetch hooks
-- Tiny ( <2 KB ) & dependency-free
-- Works in Node, Bun, Deno, Workers
-- Built on signals — not React
-- Supports retry logic
-- Built-in concurrency helpers
-- TypeScript-first
-
----
-
-## 🔧 Usage
-
-### `useFetch()`
+# 🧭 Quick Example
 
 ```ts
-import { useFetch } from "fetch-hooks-core";
+import { useFetch } from 'fetch-hooks-core';
 
-const { data, loading, error, refresh } = await useFetch(
-  "https://api.example.com"
-);
-
-console.log(data.value);
+const { data, loading, error } = await useFetch('https://example.com');
 ```
 
 ---
 
-### `useRetry()`
+# 🧠 API Documentation
+
+## useFetch()
+
+Reactive data wrapper for fetch.
+
+## useRetry()
+
+Retries any async function automatically.
+
+## usePoll()
+
+Polling with auto-stop.
+
+## useConcurrent()
+
+Parallel queue processor.
+
+---
+
+# 🛠️ Advanced Example (Premium)
 
 ```ts
-import { useRetry } from "fetch-hooks-core";
+import { useFetch, useRetry, useConcurrent } from 'fetch-hooks-core';
 
-const retry = useRetry(() => fetch("https://api.com"), {
-  retries: 3,
-  delay: 200,
-});
-
-const res = await retry.run();
+const api = await useFetch('https://api.example.com/data');
+const retryFetch = useRetry(() => fetch('https://api.com/retry'), { retries: 5 });
+const { results } = await useConcurrent([() => fetch('/a'), () => fetch('/b')], { concurrency: 2 });
 ```
 
 ---
 
-### `usePoll()`
+# ❤️ Community
 
-```ts
-import { usePoll } from "fetch-hooks-core";
+If you find this useful, star the repo and share it.
 
-const state = usePoll("/metrics", 1000);
+# 📎 Links
 
-// stop polling after 5s
-setTimeout(() => state.stop(), 5000);
-```
-
----
-
-### `useConcurrent()`
-
-```ts
-const { results } = await useConcurrent(
-  [
-    () => fetch("/1").then((r) => r.json()),
-    () => fetch("/2").then((r) => r.json()),
-    () => fetch("/3").then((r) => r.json()),
-  ],
-  { concurrency: 2 }
-);
-```
-
----
-
-## 🧪 Testing
-
-```bash
-npm test
-```
-
----
-
-## 📄 License
-
-MIT © 2025
-
----
-
-## ⭐️ Show your support
-
-If this project helps you, consider giving it a **star** on GitHub!
-
-## 📦 GitHub Repository
-
-You can find the full source code, issues, discussions, and documentation here:
-
-👉 **https://github.com/devforgetech/fetch-hooks-core**
+GitHub: https://github.com/devforgetech/fetch-hooks-core  
+npm: https://npmjs.com/package/fetch-hooks-core
