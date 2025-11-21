@@ -10,10 +10,21 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/fetch-hooks-core.svg" />
-  <img src="https://img.shields.io/bundlephobia/minzip/fetch-hooks-core" />
-  <img src="https://img.shields.io/npm/types/fetch-hooks-core" />
-  <img src="https://img.shields.io/github/license/devforgetech/fetch-hooks-core" />
+  <a href="https://www.npmjs.com/package/fetch-hooks-core">
+    <img src="https://img.shields.io/npm/v/fetch-hooks-core?color=38bdf8&label=version&style=for-the-badge" alt="npm version">
+  </a>
+  <a href="https://www.npmjs.com/package/fetch-hooks-core">
+    <img src="https://img.shields.io/npm/dt/fetch-hooks-core?color=0ea5e9&style=for-the-badge" alt="downloads">
+  </a>
+  <a href="https://github.com/devforgetech/fetch-hooks-core/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/devforgetech/fetch-hooks-core?color=14b8a6&style=for-the-badge" alt="license">
+  </a>
+  <a href="https://github.com/devforgetech/fetch-hooks-core/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/devforgetech/fetch-hooks-core/ci.yml?style=for-the-badge&color=8b5cf6" alt="CI Status">
+  </a>
+  <a href="https://bundlephobia.com/package/fetch-hooks-core">
+    <img src="https://img.shields.io/bundlephobia/minzip/fetch-hooks-core?style=for-the-badge&color=f472b6" alt="bundle size">
+  </a>
 </p>
 
 ---
