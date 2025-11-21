@@ -1,6 +1,6 @@
 {
   "name": "fetch-hooks-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tiny universal React-style hooks for fetch() that work in Node, Bun, Deno, Cloudflare Workers, and modern runtimes.",
   "repository": {
     "type": "git",
