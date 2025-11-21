@@ -1,13 +1,20 @@
 # fetch-hooks-core
 
-### Tiny, universal React-style hooks for `fetch()`.
+<p align="center">
+  <img src="./logo.svg" width="60%">
+</p>
 
-**Works in Node · Bun · Deno · Cloudflare Workers · Edge Runtimes**
+<p align="center">
+  <strong>Tiny, universal React-style hooks for fetch()</strong><br/>
+  Works in Node · Bun · Deno · Cloudflare Workers · Edge Runtimes
+</p>
 
-![npm](https://img.shields.io/npm/v/fetch-hooks-core)
-![downloads](https://img.shields.io/npm/dt/fetch-hooks-core)
-![license](https://img.shields.io/github/license/yourname/fetch-hooks-core)
-![ci](https://img.shields.io/github/actions/workflow/status/yourname/fetch-hooks-core/ci.yml?branch=main)
+<p align="center">
+  <img src="https://img.shields.io/npm/v/fetch-hooks-core.svg" />
+  <img src="https://img.shields.io/bundlephobia/minzip/fetch-hooks-core" />
+  <img src="https://img.shields.io/npm/types/fetch-hooks-core" />
+  <img src="https://img.shields.io/github/license/devforgetech/fetch-hooks-core" />
+</p>
 
 ---
 
@@ -131,3 +138,9 @@ MIT © 2025
 ## ⭐️ Show your support
 
 If this project helps you, consider giving it a **star** on GitHub!
+
+## 📦 GitHub Repository
+
+You can find the full source code, issues, discussions, and documentation here:
+
+👉 **https://github.com/devforgetech/fetch-hooks-core**
