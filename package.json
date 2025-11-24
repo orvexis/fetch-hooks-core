@@ -1,15 +1,15 @@
 {
   "name": "fetch-hooks-core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Tiny universal React-style hooks for fetch() that work in Node, Bun, Deno, Cloudflare Workers, and modern runtimes.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devforgetech/fetch-hooks-core.git"
+    "url": "https://github.com/orvexis/fetch-hooks-core.git"
   },
   "bugs": {
-    "url": "https://github.com/devforgetech/fetch-hooks-core/issues"
+    "url": "https://github.com/orvexis/fetch-hooks-core/issues"
   },
-  "homepage": "https://github.com/devforgetech/fetch-hooks-core#readme",
+  "homepage": "https://github.com/orvexis/fetch-hooks-core#readme",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",

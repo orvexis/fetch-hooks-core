@@ -94,5 +94,5 @@ If you find this useful, star the repo and share it.
 
 # 📎 Links
 
-GitHub: https://github.com/devforgetech/fetch-hooks-core  
+GitHub: https://github.com/orvexis/fetch-hooks-core  
 npm: https://npmjs.com/package/fetch-hooks-core
